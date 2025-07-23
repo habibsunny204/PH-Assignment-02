@@ -12,3 +12,131 @@
     "wdth" 100;
 }
 
+/* header section  */
+/* navigation  */
+body{
+    /* background-color: ; */
+}
+header{
+    max-width: 1140px;
+    margin: 50px auto 120px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link-cart,
+.nav-links,
+.nav-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link-cart{
+    padding: 18px 0px;
+}
+.nav-links{
+    gap: 48px;
+    margin-right: 48px;
+}
+.nav-cart{
+    gap: 10px;
+}
+.nav-links a{
+    font-size: 16px;
+    color: rgba(137, 135, 161, 1);
+    text-decoration: none;
+}
+.nav-links-home{
+    font-weight: bold;
+    color: rgba(37, 36, 50, 1);
+}
+
+/* hero section */
+.hero{
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 120px auto 0px auto;
+}
+
+.hero-content h1{
+    font-weight: bold;
+    font-size: 65px;
+    margin: 0;
+}
+.hero-content p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    margin-top: 13px;
+}
+
+/* shared style */
+span{
+    color: rgba(233, 90, 8, 1);
+}
+
+/* Main section */
+/* container-1 */
+main{
+   margin-top: 0px;
+   margin-bottom: 210px;
+}
+section{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-1-title{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+}
+.container-1-descrip{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.carts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.cart-item {
+    max-width: 270px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+.cart-img{
+    margin-bottom: 30px;
+}
+.item-detail{
+    font-weight: 500;
+    font-size: 22px;
+    color: rgba(17, 17, 17, 1);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.item-price{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cart-button{
+    width: 270px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    border: none;
+}
