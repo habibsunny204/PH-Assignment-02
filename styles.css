@@ -78,18 +78,19 @@ nav{
 span{
     color: rgba(233, 90, 8, 1);
 }
-
-/* Main section */
-/* container-1 */
-main{
-   margin-top: 0px;
-   margin-bottom: 210px;
-}
 section{
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Main section */
+/* container-1 */
+main{
+   margin-top: 0px;
+   margin-bottom: 120px;
+}
+
 .container-1-title{
     font-weight: bold;
     font-size: 50px;
@@ -139,4 +140,32 @@ section{
     background-color: rgba(233, 90, 8, 1);
     color: white;
     border: none;
+}
+/* container-2 */
+.container-2{
+    margin-top: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.container-2 img{
+    width: 540px;
+    height: 597px;
+}
+.container-2-des{
+    max-height: 522px;
+}
+.container-2-title{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+li p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    margin-bottom: 20px;
 }
