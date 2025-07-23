@@ -148,9 +148,10 @@ main{
     justify-content: center;
     align-items: center;
     gap: 60px;
+    position: relative;
 }
 
-.container-2 img{
+.container-2-img{
     width: 540px;
     height: 597px;
 }
@@ -168,4 +169,12 @@ li p{
     color: rgba(0, 0, 0, 0.5);
     margin: 0;
     margin-bottom: 20px;
+}
+.trusted-img{
+    position: absolute;
+    width: 286px;
+    height: 286px;
+    top: -127px;
+    left: 347px;
+    filter: drop-shadow(-6px 8px 10px rgba(0, 0, 0, 0.4));
 }
