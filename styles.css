@@ -79,9 +79,7 @@ span{
     color: rgba(233, 90, 8, 1);
 }
 section{
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 /* Main section */
@@ -90,7 +88,11 @@ main{
    margin-top: 0px;
    margin-bottom: 120px;
 }
-
+.container-1{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .container-1-title{
     font-weight: bold;
     font-size: 50px;
@@ -149,6 +151,9 @@ main{
     align-items: center;
     gap: 60px;
     position: relative;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-2-img{
@@ -181,6 +186,9 @@ li p{
 
 /* Container-3 */
 .container-3{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 130px;
 }
 .latest-deals{
@@ -291,5 +299,45 @@ li p{
 .sales a{
     margin: 0;
     text-decoration: underline white;
+    color: white;
+}
+
+/* conatiner 4 */
+
+.container-4{
+    height: 533px;
+    background-image: url(./assets/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.container-4 h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.container-4 input{
+    padding-left: 20px;
+    width: 644px;
+    height: 50px;
+    border: none;
+    margin-right: 0;
+}
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: px;
+}
+.container-4 button{
+    margin-left: 0;
+    width: 185px;
+    height: 50px;
+    background-color: rgba(233, 90, 8, 1);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
     color: white;
 }
