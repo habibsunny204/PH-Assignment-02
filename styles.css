@@ -15,7 +15,7 @@
 /* header section  */
 /* navigation  */
 body{
-    /* background-color: ; */
+     background-color: rgba(200, 200, 200, 0.2); 
 }
 header{
     max-width: 1140px;
@@ -177,4 +177,119 @@ li p{
     top: -127px;
     left: 347px;
     filter: drop-shadow(-6px 8px 10px rgba(0, 0, 0, 0.4));
+}
+
+/* Container-3 */
+.container-3{
+    margin-top: 130px;
+}
+.latest-deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.latest-deals-title{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.latest-deals-des{
+    max-width: 888px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+    text-align: center;
+}
+.sales{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.sales-2{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.sales p{
+    margin: 0;
+    margin-bottom: 19px;
+}
+.sales-1{
+    background-image: url(./assets/deal-bloom.png);
+}
+.sales-2 {
+    position: relative;
+    background-image: url(./assets/deal-zabo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.sales-3{
+    background-image: url(./assets/deal-ana.png);
+}
+.sales-1,
+.sales-3{
+    position: relative;
+    width: 366.22px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.sales-1::before,
+ .sales-2::before,
+ .sales-3::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    border-radius: 22px;
+}
+
+.sales-1 > * ,
+.sales-2 > * ,
+.sales-3 > *{
+    position: relative;
+    z-index: 1;
+}
+.sales-1 a,
+.sales-3 a{
+    font-weight: 600;
+    font-size: 16px;
+}
+.sales-2 a{
+    font-weight: 600;
+    font-size: 28px;
+}
+.sales a{
+    margin: 0;
+    text-decoration: underline white;
+    color: white;
 }
