@@ -55,7 +55,7 @@ nav{
 
 /* hero section */
 .hero{
-    max-width: 1140px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -77,9 +77,6 @@ nav{
 /* shared style */
 span{
     color: rgba(233, 90, 8, 1);
-}
-section{
-    
 }
 
 /* Main section */
@@ -112,11 +109,12 @@ main{
     gap: 20px;
 }
 .cart-item {
-    max-width: 270px;
+    width: 270px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
 }
 .cart-img{
+    width: 100%;
     margin-bottom: 30px;
 }
 .item-detail{
@@ -135,7 +133,7 @@ main{
     margin-bottom: 30px;
 }
 .cart-button{
-    width: 270px;
+    width: 100%;
     height: 50px;
     font-weight: 600;
     font-size: 16px;
@@ -269,8 +267,8 @@ li p{
 }
 
 .sales-1::before,
- .sales-2::before,
- .sales-3::before{
+.sales-2::before,
+.sales-3::before{
     content: "";
     position: absolute;
     top: 0; left: 0;
@@ -321,19 +319,19 @@ li p{
     font-size: 50px;
 }
 .container-4 input{
+    padding: 15.5px auto 15.5px 20px;
     padding-left: 20px;
     width: 644px;
     height: 50px;
     border: none;
-    margin-right: 0;
 }
-input::placeholder {
+input::placeholder{
     color: rgba(0, 0, 0, 0.5);
-    font-size: px;
+    font-size: 16px;
 }
 .container-4 button{
     margin-left: 0;
-    width: 185px;
+    width: 186px;
     height: 50px;
     background-color: rgba(233, 90, 8, 1);
     border: none;
@@ -375,4 +373,172 @@ input::placeholder {
     display: flex;
     justify-content: right;
     gap: 24px;
+}
+
+a:hover,
+button:hover{
+   background-color: aquamarine;
+}
+
+.display{
+    display: none;
+}
+@media screen and (max-width: 575.989px) {
+    header{
+        max-width: calc(100vw);
+        margin: 0;
+        margin-top: 13px;
+        margin-bottom: 60px;
+    }
+    .logo{
+        width: 63px;
+        height: 38px;
+    }
+    .nav{
+        margin-bottom: 28px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .hero{
+        width: calc(100wh);
+        padding: 0;
+        margin: 0;
+        flex-direction: column-reverse;
+        gap: 28px;
+        
+    }
+    
+    .hero-content h1{
+        font-size: 24px;   
+    }
+    .content-img{
+        width: 100vw;
+        height: 245px;
+    }
+     .content-img img{
+        width: 100%;
+        height: 245px;
+    }
+    .footer-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .item-detail,
+    .item-price{
+        font-size: 16px;
+    }
+    .hero-content p,
+    .font-14{
+        font-size: 14px;
+    }
+    .container-1{
+        margin: 0;
+        padding: 0;
+    }
+    .carts {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .cart-item {
+        width: 100%;
+        margin-bottom: 10.5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    }
+    /* Container-2 */
+    .container-2{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .container-2-des{
+        border: 1px solid violet;
+        width: 100%;
+    }
+    .container-2-img{
+       border: 1px solid chocolate;
+       width: 100%;
+       height: 396px;
+    }
+   .container-2-des ul {
+       width: calc(100% - 25px);
+       border: 1px solid rgb(47, 30, 19);
+       padding-left: 0;   
+       margin-left: 25px;
+    }
+    .trusted-img{
+        display: none;
+    }
+    
+    /* Container 3 */
+    .container-3{
+        width: calc(100vw - 30px);
+        margin-top: 100px;
+    }
+
+    .latest-deals-title,
+    .latest-deals-des{
+        margin-bottom: 16px ;
+    }
+    
+    .sales{
+        width: calc(100% - 30px);
+        margin-top: 50px;
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .latest-deals{
+        width: calc(100% - 30px);
+        display: grid;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sales-1,
+    .sales-3{
+        width: 100%;
+    }
+    .sales-2{
+        width: 100%;;
+        height: 206px;
+        font-size: 20px;
+        border-radius: 14px;
+    }
+    .sales-2 a{
+        font-size: 16px;
+    }
+    .container-4{
+       width: calc(100vw - 30px);
+       height: 275px;
+       margin-top: 40px;
+    }
+    .container-4 h1{
+        font-size: 20px;
+    }
+    .container-4 input{
+        width: 218px;
+    }
+    .container-4 button{
+        width: 103px;
+    }
+    footer{
+        margin-bottom: 50px;
+    }
+    .hero-content,
+    .container-1,
+    .container-2,
+    .container-3{
+        margin-left: 15px; 
+        margin-right: 15px;
+    }
 }
