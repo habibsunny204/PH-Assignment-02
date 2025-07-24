@@ -93,7 +93,7 @@ main{
 .container-1-title{
     font-weight: bold;
     font-size: 50px;
-    margin: 0;
+    margin: 16px;
     text-align: center;
 }
 .container-1-descrip{
@@ -548,5 +548,4 @@ button:hover{
         margin-left: 15px; 
         margin-right: 15px;
     }
-
 }
