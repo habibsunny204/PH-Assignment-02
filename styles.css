@@ -460,17 +460,13 @@ button:hover{
         margin-top: 30px;
     }
     .container-2-des{
-        border: 1px solid violet;
         width: 100%;
     }
     .container-2-img{
-       border: 1px solid chocolate;
        width: 100%;
        height: 396px;
     }
    .container-2-des ul {
-       width: calc(100% - 25px);
-       border: 1px solid rgb(47, 30, 19);
        padding-left: 0;   
        margin-left: 25px;
     }
@@ -480,7 +476,8 @@ button:hover{
     
     /* Container 3 */
     .container-3{
-        width: calc(100vw - 30px);
+        margin: 0;
+        padding: 0;
         margin-top: 100px;
     }
 
@@ -490,7 +487,7 @@ button:hover{
     }
     
     .sales{
-        width: calc(100% - 30px);
+        width: 100%;
         margin-top: 50px;
         display: grid;
         display: flex;
@@ -498,7 +495,7 @@ button:hover{
         gap: 20px;
     }
     .latest-deals{
-        width: calc(100% - 30px);
+        width: 100%;
         display: grid;
         display: flex;
         flex-direction: column;
@@ -518,9 +515,10 @@ button:hover{
         font-size: 16px;
     }
     .container-4{
-       width: calc(100vw - 30px);
-       height: 275px;
-       margin-top: 40px;
+        margin: 0;
+        padding: 0;
+        height: 275px;
+        margin-top: 40px;
     }
     .container-4 h1{
         font-size: 20px;
@@ -532,13 +530,23 @@ button:hover{
         width: 103px;
     }
     footer{
-        margin-bottom: 50px;
+        height: 865px;
+        margin-bottom: 200px;
+    }
+    .footer-item-1 img{
+        width: 180px;
+        height: 110px;
+    }
+    .footer-item-2{
+        gap: 32px;
     }
     .hero-content,
     .container-1,
     .container-2,
-    .container-3{
+    .container-3,
+    footer{
         margin-left: 15px; 
         margin-right: 15px;
     }
+
 }
