@@ -224,30 +224,32 @@ li p{
     margin: 0;
     margin-bottom: 19px;
 }
-.sales-1{
-    background-image: url(./assets/deal-bloom.png);
+
+.sales-1 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.60),
+        rgba(0, 0, 0, 0.60)
+    ),
+    url(./assets/deal-bloom.png);
 }
 .sales-2 {
-    position: relative;
-    background-image: url(./assets/deal-zabo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    border-radius: 22px;
-    overflow: hidden;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.60),
+        rgba(0, 0, 0, 0.60)
+    ),
+    url(./assets/deal-zabo.png);
 }
 
-.sales-3{
-    background-image: url(./assets/deal-ana.png);
+.sales-3 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.60),
+        rgba(0, 0, 0, 0.60)
+    ),
+    url(./assets/deal-ana.png);
 }
+
 .sales-1,
+.sales-2,
 .sales-3{
     position: relative;
     width: 366.22px;
@@ -266,18 +268,13 @@ li p{
     overflow: hidden;
 }
 
-.sales-1::before,
-.sales-2::before,
-.sales-3::before{
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 0;
+.sales-2 {
+    width: auto;
+    height: auto;
+    font-size: 40px;
     border-radius: 22px;
 }
+
 
 .sales-1 > * ,
 .sales-2 > * ,
@@ -286,12 +283,12 @@ li p{
     z-index: 1;
 }
 .sales-1 a,
+.sales-2 a,
 .sales-3 a{
     font-weight: 600;
     font-size: 16px;
 }
 .sales-2 a{
-    font-weight: 600;
     font-size: 28px;
 }
 .sales a{
@@ -318,26 +315,33 @@ li p{
     font-weight: bold;
     font-size: 50px;
 }
-.container-4 input{
-    padding: 15.5px auto 15.5px 20px;
-    padding-left: 20px;
+.input-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-wrap input,
+.input-wrap button {
+    height: 50px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-wrap input {
     width: 644px;
-    height: 50px;
-    border: none;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
-input::placeholder{
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 16px;
-}
-.container-4 button{
-    margin-left: 0;
+
+.input-wrap button {
     width: 186px;
-    height: 50px;
     background-color: rgba(233, 90, 8, 1);
-    border: none;
+    color: white;
     font-weight: 600;
     font-size: 16px;
-    color: white;
+    cursor: pointer;
 }
 
 /* footer */
@@ -514,21 +518,28 @@ button:hover{
     .sales-2 a{
         font-size: 16px;
     }
-    .container-4{
+
+    .container-4 {
         margin: 0;
         padding: 0;
         height: 275px;
         margin-top: 40px;
     }
-    .container-4 h1{
+
+    .container-4 h1 {
         font-size: 20px;
     }
-    .container-4 input{
-        width: 218px;
+
+    .container-4 input {
+        width: 218px !important;
+        box-sizing: border-box;
+        padding: 15.5px 0 15.5px 20px;
     }
-    .container-4 button{
-        width: 103px;
+
+    .container-4 button {
+        width: 100px;
     }
+
     footer{
         height: 865px;
         margin-bottom: 200px;
